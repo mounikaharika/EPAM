@@ -1,7 +1,6 @@
 package calculate;
 
 import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -35,10 +34,9 @@ public class CalculatorTest {
 
 	public void testDivision() {
 		Calculator c=new Calculator();
-		assertEquals(3, c.division(30, 10));
-		assertEquals(-1.5, c.division(3,-2));
-		assertEquals(-1.5, c.division(-3,2));
-		assertEquals(1.5, c.division(-3,-2));
+		assertEquals(-1.5, c.division(3,-2),0);
+		assertEquals(-1.5, c.division(-3,2),0);
+		assertEquals(1.5, c.division(-3,-2),0);
 	}
 
 }
