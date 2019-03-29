@@ -63,7 +63,12 @@ public class Finding_middle_element
  */
 class GFG
 {
-    // Function to find middle element a linked list
+   
+	/**
+	 *  Function to find middle element a linked list
+	 * @param head
+	 * @return middle element in linked list
+	 */
     int getMiddle(Node1 head)
    {
          Node1 fastPointer=head;
